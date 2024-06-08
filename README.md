@@ -1,13 +1,2 @@
-### Curso udemy
+## Tests I have done or been given to do
 
-# create the folder for the project
-echo "# testeudemy" >> README.md
-
-git init
-
-git add README.md
-git commit -m "first commit"
-
-git branch -M main
-git remote add origin https://github.com/ricardoquadros/testeudemy.git
-git push -u origin main
