@@ -2,3 +2,5 @@
 
 ### Suggestions are welcome
 
+    * ReturnHighestValue - Return the Max value between 3 parameters
+    * 
