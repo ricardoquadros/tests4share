@@ -1,5 +1,8 @@
 import java.util.stream.IntStream;
 
+/**
+ *  Return the index of the list with highest value
+ */
 public class ReturnHighestValue {
 
     public static void main(String args[]) {
