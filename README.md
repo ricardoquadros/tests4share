@@ -12,3 +12,5 @@
         number of protons in the initial atom and the protonTarget and the neutronTarget 
         represent the number of protons and neutrons in the desired atom. Return a list of strings
 
+    * org.examples.tests.CapitalizeWords
+        - The method takes 4 parameters, protonStart and neutronStart represent the 
