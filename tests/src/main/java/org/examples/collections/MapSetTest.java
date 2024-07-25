@@ -13,6 +13,7 @@ public class MapSetTest {
         mapTest.put(1,"Z");
         mapTest.put(null,null);
         mapTest.put(3,"W");
+        mapTest.put(4,null);
 
         setTest.add(3);
         setTest.add(2);
