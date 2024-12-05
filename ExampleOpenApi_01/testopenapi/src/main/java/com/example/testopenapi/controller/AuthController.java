@@ -29,10 +29,7 @@ public class AuthController {
 
     @GetMapping("/login")
     public ResponseEntity<?> login(@RequestParam String usuario, @RequestParam String senha) {
-        //String usuario = loginData.get("usuario");
-        //String senha = loginData.get("senha");
 
-        //.filter(u -> passwordEncoder.matches(senha, u.getSenha()))
         return usuarioRepository.findByUsuario(usuario)
                 .filter(u -> senha.equals(u.getSenha()))
                 .<ResponseEntity<?>>map(user -> {
