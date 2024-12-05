@@ -29,3 +29,25 @@ While most of the inheritance is fine, it also inherits unwanted elements like `
 To prevent this, the project POM contains empty overrides for these elements.
 If you manually switch to a different parent and actually want the inheritance, you need to remove those overrides.
 
+
+# Database Test
+CREATE DATABASE testdb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+# Table test
+CREATE TABLE usuarios (   
+id INT AUTO_INCREMENT PRIMARY KEY,  -- Chave primária   
+usuario VARCHAR(50) NOT NULL,       -- Coluna para o nome de usuário   
+senha VARCHAR(255) NOT NULL,        -- Coluna para a senha (hashed, geralmente)   
+criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Registro da data de criação   
+UNIQUE(usuario)                     -- Garantia de que o nome de usuário seja único   
+) ENGINE=InnoDB;
+
+# Record
+insert into usuarios (usuario, senha) values ('TEST1','123456789');
+
+
+http://localhost:8080/swagger-ui/index.html
+
+http://localhost:8080/api/login?usuario=TEST1&senha=123456789
+
+
